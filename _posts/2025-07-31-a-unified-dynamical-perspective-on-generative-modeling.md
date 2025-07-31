@@ -1,3 +1,8 @@
+---
+layout: post
+title: "A Unified Dynamical Perspective on Generative Modeling"
+---
+
 # Foundations of Stochastic Dynamics
 
 ## Discrete Random Walk
