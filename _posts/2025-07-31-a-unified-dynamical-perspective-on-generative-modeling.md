@@ -20,9 +20,9 @@ are as follows:
 
 - **Expectation** The mean displacement for each step is $`0`$, which
   indicates that the random motion is unbiased.
-  ``` math
+  $$
   \mathbb{E}[X_i] = (+\Delta x) \times 0.5 + (-\Delta x) \times 0.5 = 0
-  ```
+  $$
 
 - **Variance** The variance reflects the uncertainty or magnitude of
   fluctuation for each step’s displacement.
