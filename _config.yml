@@ -1,10 +1,9 @@
-# 网站主题 (这是你之前选择的)
+# 网站主题
 theme: jekyll-theme-minimal
 
 # 网站标题和描述
 title: YuxuanQiu-0325's Blog
 description: A blog about generative modeling and other tech topics.
 
-# 告诉 Kramdown 使用 MathJax 引擎来处理数学公式
-kramdown:
-  math_engine: mathjax
+# 指定使用 GFM 作为 Markdown 解释器，以避免空格被删除的问题
+markdown: GFM
