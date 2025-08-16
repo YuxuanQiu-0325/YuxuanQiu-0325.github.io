@@ -20,28 +20,42 @@
     var CONFIG = {"hostname":"yuxuanqiu-0325.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="https://yuxuanqiu-0325.github.io/index.html">
+  <meta name="description" content="Abstract This blog aims to provide a unified mathematical and physical perspective on two leading deep generative modeling paradigms: Score-Based Diffusion Models and Flow Matching. We begin with the">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A Unified Dynamical Perspective on Generative Modeling: From Stochastic Diffusion to Deep Learning">
+<meta property="og:url" content="https://yuxuanqiu-0325.github.io/2025/07/31/2025-07-31-a-unified-dynamical-perspective-on-generative-modeling/index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="Abstract This blog aims to provide a unified mathematical and physical perspective on two leading deep generative modeling paradigms: Score-Based Diffusion Models and Flow Matching. We begin with the">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://yuxuanqiu-0325.github.io/pic/1.png">
+<meta property="og:image" content="https://yuxuanqiu-0325.github.io/pic/2.png">
+<meta property="og:image" content="https://yuxuanqiu-0325.github.io/pic/3.png">
+<meta property="og:image" content="https://yuxuanqiu-0325.github.io/pic/4.png">
+<meta property="og:image" content="https://yuxuanqiu-0325.github.io/pic/5.png">
+<meta property="og:image" content="https://yuxuanqiu-0325.github.io/pic/6.png">
+<meta property="og:image" content="https://yuxuanqiu-0325.github.io/pic/7.png">
+<meta property="og:image" content="https://yuxuanqiu-0325.github.io/pic/8.png">
+<meta property="og:image" content="https://yuxuanqiu-0325.github.io/pic/9.png">
+<meta property="article:published_time" content="2025-07-31T05:00:00.000Z">
+<meta property="article:modified_time" content="2025-08-15T14:05:51.824Z">
 <meta property="article:author" content="Yuxuan Qiu">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yuxuanqiu-0325.github.io/pic/1.png">
 
-<link rel="canonical" href="https://yuxuanqiu-0325.github.io/">
+<link rel="canonical" href="https://yuxuanqiu-0325.github.io/2025/07/31/2025-07-31-a-unified-dynamical-perspective-on-generative-modeling/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Blog</title>
+  <title>A Unified Dynamical Perspective on Generative Modeling: From Stochastic Diffusion to Deep Learning | Blog</title>
   
 
 
@@ -141,9 +155,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -159,10 +174,9 @@
       <meta itemprop="name" content="Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/07/31/2025-07-31-a-unified-dynamical-perspective-on-generative-modeling/" class="post-title-link" itemprop="url">A Unified Dynamical Perspective on Generative Modeling: From Stochastic Diffusion to Deep Learning</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          A Unified Dynamical Perspective on Generative Modeling: From Stochastic Diffusion to Deep Learning
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -192,7 +206,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 class="no-number" style="text-align:center;">Abstract</h1>
+        <h1 class="no-number" style="text-align:center;">Abstract</h1>
 This blog aims to provide a unified mathematical and physical perspective on two leading deep generative modeling paradigms: Score-Based Diffusion Models and Flow Matching. We begin with the fundamental concept of a one-dimensional random walk and systematically derive its continuous limit, Brownian motion. This leads to the introduction of core mathematical tools that describe its dynamics: Stochastic Differential Equations (SDEs), the Itô Integral, and the Fokker-Planck Equation. Building on this foundation, we conduct an in-depth analysis of the diffusion model framework, clarifying how it connects data and noise by defining a forward noising SDE and learning a reverse denoising SDE. The primary contribution of this paper is the establishment of a unified mathematical and physical framework to interpret generative modeling. By describing the generative process through the language of stochastic differential equations (SDEs) and ordinary differential equations (ODEs), it connects the dynamics of stochastic diffusion with those of deterministic flows.  Furthermore, this blog explores related critical techniques, such as the Probability Flow ODE for accelerated sampling and Optimal Transport Coupling for reducing training variance. Through a unified perspective on dynamics and probability theory, this blog seeks to provide a clear and rigorous theoretical foundation for understanding and comparing these two powerful generative models.
 
 <h1 id="Foundations-of-Stochastic-Dynamics"><a href="#Foundations-of-Stochastic-Dynamics" class="headerlink" title="Foundations of Stochastic Dynamics"></a>Foundations of Stochastic Dynamics</h1><h2 id="Discrete-Random-Walk"><a href="#Discrete-Random-Walk" class="headerlink" title="Discrete Random Walk"></a>Discrete Random Walk</h2><p>We consider a one-dimensional discrete random walk model: a particle moves a fixed step length $\Delta x$ to the right with a probability of $0.5$ or to the left by the same step length with a probability of $0.5$, within each time step $\Delta t$. Let the random variable $X_i$ denote the displacement in the $i$-th step.</p>
@@ -468,21 +482,23 @@ This blog aims to provide a unified mathematical and physical perspective on two
 <p>Simultaneously, differentiating $\psi_t$ yields:<br>$$<br>\psi_t’(x) &#x3D; \dot{\sigma}_t(x_1) x + \dot{\mu}_t(x_1)<br>$$</p>
 <p>According to the ODE, we derive:<br>\begin{align*}<br>u_t(x|x_1) &amp;&#x3D; \dot{\psi}_t(x) &#x3D; \dot{\psi}_t\left(\psi_t^{-1}(y)\right) &#x3D; \psi_t’\left(\psi_t^{-1}(y)\right) \cdot \dot{y}(x_1) \\<br>&amp;&#x3D; \dot{\sigma}_t(x_1) \cdot \frac{y - \mu_t(x_1)}{\sigma_t(x_1)} + \dot{\mu}_t(x_1) \\<br>&amp;&#x3D; \frac{\dot{\sigma}_t(x_1)}{\sigma_t(x_1)} \left(x - \mu_t(x_1)\right) + \dot{\mu}_t(x_1)<br>\end{align*}</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+
+
+        
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -535,6 +551,7 @@ This blog aims to provide a unified mathematical and physical perspective on two
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Foundations-of-Stochastic-Dynamics"><span class="nav-number">2.</span> <span class="nav-text">Foundations of Stochastic Dynamics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Discrete-Random-Walk"><span class="nav-number">2.1.</span> <span class="nav-text">Discrete Random Walk</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Single-Step-Statistical-Properties"><span class="nav-number">2.1.1.</span> <span class="nav-text">Single-Step Statistical Properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Multi-Step-Statistical-Properties"><span class="nav-number">2.1.2.</span> <span class="nav-text">Multi-Step Statistical Properties</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Transition-to-Continuous-Brownian-Motion"><span class="nav-number">2.2.</span> <span class="nav-text">Transition to Continuous Brownian Motion}</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Derivation-of-the-Macroscopic-Diffusion-Equation"><span class="nav-number">2.3.</span> <span class="nav-text">Derivation of the Macroscopic Diffusion Equation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Stochastic-Differential-Equations-and-the-Fokker-Planck-Equation"><span class="nav-number">2.4.</span> <span class="nav-text">Stochastic Differential Equations and the Fokker-Planck Equation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Limiting-Case-Degeneration-from-SDE-to-ODE"><span class="nav-number">2.5.</span> <span class="nav-text">Limiting Case: Degeneration from SDE to ODE</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Diffusion-Models"><span class="nav-number">3.</span> <span class="nav-text">Diffusion Models</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ito%E2%80%99s-Lemma-and-Euler-Maruyama-Discretization"><span class="nav-number">3.1.</span> <span class="nav-text">Itô’s Lemma and Euler-Maruyama Discretization</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ito%E2%80%99s-Lemma-and-the-Ito-Integral"><span class="nav-number">3.1.1.</span> <span class="nav-text">Itô’s Lemma and the Itô Integral</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Discretizing-the-It-o-Integral-The-Euler-Maruyama-Method"><span class="nav-number">3.1.2.</span> <span class="nav-text">Discretizing the It^o Integral: The Euler-Maruyama Method</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-Learn-mu-theta-x-t"><span class="nav-number">3.2.</span> <span class="nav-text">How to Learn $\mu_{\theta}(x,t)$?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#From-Simple-to-Complex-or-Complex-to-Simple"><span class="nav-number">3.2.1.</span> <span class="nav-text">From Simple to Complex, or Complex to Simple?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Score-Matching"><span class="nav-number">3.2.2.</span> <span class="nav-text">Score Matching</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-Unified-Dynamical-Perspective-on-Diffusion-Models-VP-SDE-VE-SDE-and-Langevin-Dynamics"><span class="nav-number">3.3.</span> <span class="nav-text">A Unified Dynamical Perspective on Diffusion Models: VP-SDE, VE-SDE, and Langevin Dynamics</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VP-SDE-Variance-Preserving-Diffusion-Modeling"><span class="nav-number">3.3.1.</span> <span class="nav-text">VP-SDE: Variance Preserving Diffusion Modeling</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VE-SDE-Variance-Exploding-Diffusion-Modeling"><span class="nav-number">3.4.</span> <span class="nav-text">VE-SDE: Variance Exploding Diffusion Modeling</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Langevin-Dynamics-as-a-Unifying-Perspective"><span class="nav-number">3.5.</span> <span class="nav-text">Langevin Dynamics as a Unifying Perspective</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Removing-Randomness-Degeneration-from-SDE-to-the-Probability-Flow-ODE"><span class="nav-number">3.6.</span> <span class="nav-text">Removing Randomness: Degeneration from SDE to the Probability Flow ODE</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Flow-Based-Models"><span class="nav-number">4.</span> <span class="nav-text">Flow-Based Models</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Classic-Paradigm-Normalizing-Flows"><span class="nav-number">4.1.</span> <span class="nav-text">The Classic Paradigm: Normalizing Flows</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#From-Discrete-to-Continuous-Continuous-Normalizing-Flows"><span class="nav-number">4.2.</span> <span class="nav-text">From Discrete to Continuous: Continuous Normalizing Flows</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-Modern-Paradigm-for-Efficient-Training-Flow-Matching"><span class="nav-number">4.3.</span> <span class="nav-text">A Modern Paradigm for Efficient Training: Flow Matching</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Conditional-Flow-Matching"><span class="nav-number">4.3.1.</span> <span class="nav-text">Conditional Flow Matching</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Gaussian-Probability-Paths"><span class="nav-number">4.4.</span> <span class="nav-text">Gaussian Probability Paths</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coupling"><span class="nav-number">4.5.</span> <span class="nav-text">Coupling</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">5.</span> <span class="nav-text">Conclusion</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
