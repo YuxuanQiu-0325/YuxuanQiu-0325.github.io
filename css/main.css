@@ -930,7 +930,7 @@ pre .javascript .function {
 }
 @media (min-width: 1600px) {
   .main-inner {
-    width: 73%;
+    width: 90%;
   }
 }
 @media (max-width: 767px) {
@@ -952,7 +952,7 @@ pre .javascript .function {
 }
 @media (min-width: 1600px) {
   .header-inner {
-    width: 73%;
+    width: 90%;
   }
 }
 .site-brand-container {
@@ -1193,7 +1193,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #6b67ff;
+  background: #0effee;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1416,7 +1416,7 @@ pre .javascript .function {
 }
 @media (min-width: 1600px) {
   .footer-inner {
-    width: 73%;
+    width: 90%;
   }
 }
 .languages {
@@ -1716,6 +1716,14 @@ pre .javascript .function {
 .content {
   padding-top: 40px;
 }
+.post-body {
+  line-height: 1.6;
+}
+@media (min-width: 992px) {
+  .post-body {
+    text-align: justify;
+  }
+}
 @media (min-width: 992px) {
   .post-body {
     text-align: justify;
@@ -1733,6 +1741,8 @@ pre .javascript .function {
 .post-body h5,
 .post-body h6 {
   padding-top: 10px;
+  margin-top: 10px; /* 设置标题距离上方内容的间距 */
+  margin-bottom: 10px; /* 设置标题距离下方内容的间距 */
 }
 .post-body h1 .header-anchor,
 .post-body h2 .header-anchor,
@@ -2229,7 +2239,7 @@ mjx-container + br {
 }
 @media (min-width: 1600px) {
   .header {
-    width: 73%;
+    width: 90%;
   }
 }
 @media (max-width: 991px) {
